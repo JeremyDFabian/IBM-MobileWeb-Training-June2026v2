@@ -3,14 +3,19 @@
     <ion-tabs>
       <ion-router-outlet></ion-router-outlet>
       <ion-tab-bar slot="bottom">
-        <ion-tab-button tab="day1" href="/tabs/day1">
-          <ion-icon aria-hidden="true" :icon="clipboard" />
-          <ion-label>Day 1</ion-label>
+        <ion-tab-button tab="tasks" href="/tabs/tasks">
+          <ion-icon aria-hidden="true" :icon="list" />
+          <ion-label>Tasks</ion-label>
         </ion-tab-button>
 
-        <ion-tab-button tab="day4" href="/tabs/day4">
-          <ion-icon aria-hidden="true" :icon="list" />
-          <ion-label>Day 4</ion-label>
+        <ion-tab-button tab="completed" href="/tabs/completed">
+          <ion-icon aria-hidden="true" :icon="checkmarkDone" />
+          <ion-label>Completed</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button tab="settings" href="/tabs/settings">
+          <ion-icon aria-hidden="true" :icon="settings" />
+          <ion-label>Settings</ion-label>
         </ion-tab-button>
       </ion-tab-bar>
     </ion-tabs>
@@ -19,5 +24,5 @@
 
 <script setup lang="ts">
 import { IonTabBar, IonTabButton, IonTabs, IonLabel, IonIcon, IonPage, IonRouterOutlet } from '@ionic/vue';
-import { clipboard, list } from 'ionicons/icons';
+import { list, checkmarkDone, settings } from 'ionicons/icons';
 </script>
